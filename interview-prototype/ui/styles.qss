@@ -68,4 +68,182 @@ QLabel#statusBar {
 }
 
 
+QTextEdit#scoreDescriptionEdit {
+    background-color: #303030; /* Slightly different background */
+    border: 1px solid #444444;
+    padding: 5px;
+    border-radius: 6px; /* Slightly rounded corners */
+}
+
+/* --- Style for the score description text edit (Optional) --- */
+QTextEdit#scoreDescriptionEdit {
+    background-color: #303030; /* Slightly different background */
+    border: 1px solid #444444;
+    padding: 5px;
+    border-radius: 6px; /* Slightly rounded corners */
+}
+
+/* --- (Keep existing styles for progressIndicator, statusBar etc.) --- */
+QLabel#progressIndicator {
+    color: #AAAAAA; /* Color for non-active steps */
+    font-weight: normal;
+    padding: 5px;
+}
+QLabel#statusBar {
+    color: #E0E0E0;
+    background-color: #1E1E1E;
+    padding: 4px 8px;
+    border-top: 1px solid #555555;
+    min-height: 18px;
+}
+
+/* --- Style for the score description text edit --- */
+QTextEdit#scoreDescriptionEdit {
+    background-color: #303030;
+    border: 1px solid #444444;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+/* --- Style for the requirements scroll area --- */
+QScrollArea#requirementsScrollArea {
+    border: 1px solid #444444; /* Border around scroll area */
+    background-color: #2E2E2E; /* Background inside scroll area */
+    border-radius: 6px;
+}
+
+/* --- Style for individual requirement sections --- */
+QFrame#requirementSection {
+    background-color: #383838; /* Background for each requirement */
+    border: 1px solid #484848;
+    border-radius: 4px;
+    padding: 5px; /* Internal padding */
+}
+
+/* --- Style for evidence labels (Optional: make dimmer) --- */
+QLabel#evidenceLabel {
+    color: #BBBBBB; /* Slightly dimmer text for evidence */
+}
+
+
+/* --- Style for the score description text edit --- */
+QTextEdit#scoreDescriptionEdit {
+    background-color: #303030;
+    border: 1px solid #444444;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+/* --- Style for the requirements scroll area --- */
+QScrollArea#requirementsScrollArea {
+    border: 1px solid #444444;
+    background-color: #2E2E2E;
+    border-radius: 6px;
+}
+
+/* --- Style for individual requirement sections (the outer frame) --- */
+QFrame#requirementSection {
+    background-color: #383838; /* Background for each requirement frame */
+    border: 1px solid #484848;
+    border-radius: 4px;
+    /* padding: 0px; No padding on the outer frame itself */
+    margin-bottom: 2px; /* Small gap below each section */
+}
+
+/* --- Style for the CLICKABLE summary part inside the requirement section --- */
+QWidget#requirementSummary {
+    background-color: transparent; /* Inherit from requirementSection by default */
+    border: none; /* No border on the summary part */
+    padding: 4px; /* Add padding inside the clickable area */
+}
+/* Optional: Add a hover effect */
+QWidget#requirementSummary:hover {
+    background-color: #4A4A4A; /* Slightly lighter on hover */
+}
+
+/* --- Style for the EXPANDED details part inside the requirement section --- */
+QWidget#requirementDetails {
+    background-color: #303030; /* Slightly different background for details */
+    border: none;
+    /* Padding is handled by its internal layout margins */
+    /* Add top border for separation? */
+    border-top: 1px solid #484848;
+}
+
+/* --- Style for evidence labels inside the details part --- */
+QLabel#evidenceText {
+    color: #CCCCCC; /* Standard text color for evidence */
+    margin-left: 5px; /* Indent evidence text slightly */
+}
+QLabel.evidenceText { /* Allow styling by class if needed */
+    color: #CCCCCC;
+    margin-left: 5px;
+}
+
+/* --- Style for the Resume List --- */
+QListWidget#resumeList {
+    border: 1px solid #555555;
+    background-color: #303030; /* Slightly different bg */
+    border-radius: 6px;
+    padding: 3px;
+    outline: 0; /* Remove focus outline if desired */
+}
+QListWidget#resumeList::item {
+    padding: 5px 8px; /* Spacing within items */
+    border-bottom: 1px solid #404040; /* Separator */
+    color: #E0E0E0; /* Text color */
+}
+QListWidget#resumeList::item:last-child {
+    border-bottom: none; /* No separator for last item */
+}
+/* Style for selected item */
+QListWidget#resumeList::item:selected {
+    background-color: #4285F4; /* Selection color (e.g., Google Blue) */
+    color: white;
+    border-radius: 3px; /* Slightly round selected item */
+    border-bottom-color: transparent; /* Hide separator below selected */
+}
+/* Style for hovered item (non-selected) */
+QListWidget#resumeList::item:!selected:hover {
+    background-color: #4A4A4A; /* Hover color */
+     border-radius: 3px;
+}
+
+QScrollArea#jdScrollArea {
+    border: 1px solid #444444
+    background-color: #2E2E2E
+    border-radius: 6px
+    min-height: 60px /* Adjust as needed */
+}
+
+/* --- Style for individual JD Widgets --- */
+QFrame#jdEntryWidget {
+    background-color: #383838
+    border: 1px solid #484848
+    border-radius: 4px
+}
+QFrame#jdEntryWidget:hover {
+    background-color: #4A4A4A
+}
+QFrame#jdEntryWidget[selected="true"] {
+     background-color: #007ACC /* Different selection color for JDs? */
+     border: 1px solid #3399DD
+}
+QFrame#jdEntryWidget[selected="true"] QLabel#jdNameLabel {
+    color: white
+}
+QLabel#jdNameLabel {
+    color: #E0E0E0
+}
+
+/* --- Style for the JD Display Text Edit --- */
+QTextEdit#jdDisplayEdit {
+   border: 1px solid #555555
+   padding: 5px
+   background-color: #303030 /* Slightly darker/dimmer for read-only display */
+   color: #CCCCCC /* Dimmer text */
+   border-radius: 6px
+}
+
+
 /* Checkboxes use default theme style */
